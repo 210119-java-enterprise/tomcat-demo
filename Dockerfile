@@ -1,4 +1,4 @@
 FROM tomcat
-COPY target/*.war /tomcat/webapps/ROOT.war
+COPY target/*.war /webapps/ROOT.war
 EXPOSE 8080
-CMD ["/tomcat/bin/catalina.sh", "run"]
+CMD ["/bin/catalina.sh", "run"]
